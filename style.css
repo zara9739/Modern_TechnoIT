@@ -1,0 +1,185 @@
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.white {
+  background-color: white;
+  color: black;
+}
+
+body.black {
+  background-color: black;
+  color: white;
+}
+
+/* Toggle Switch Styling */
+.custom-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.custom-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+.fluid1{
+  background-image: url(https://img.freepik.com/premium-vector/human-head-form-lines-triangles-particle-style-design-illustration-vector_41814-293.jpg?w=996);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: sticky;
+  background-attachment: fixed;
+}
+.fluid2{
+  background-image: url(https://img.freepik.com/premium-vector/human-head-form-lines-triangles-particle-style-design-illustration-vector_41814-293.jpg?w=996);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: sticky;
+  background-attachment: fixed;
+}
+.navbar{
+  position: sticky;
+  top: 0;
+  background-image: url(https://th.bing.com/th/id/R.c5077d8b192096e430f9c0f85be1d2bb?rik=kdkLb9Tjvajchg&pid=ImgRaw&r=0);
+  background-size: cover;
+}
+.nav-link{
+  color: white;
+}
+.nav-link:hover{
+  color: blue;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.Paragraph1{
+  margin: 10% 0% 0% 0%;
+  padding-left: 15%;
+}
+.btn-hover:hover {
+  opacity: 0.8;
+  border-color: #025add;
+}
+.card{
+  color: black;
+}
+.card:hover{
+  background: black;
+  border: 2px solid #025add;
+  color: white;
+}
+body{
+  font-family: tahoma;
+}
+
+
+
+.layout {
+    margin: auto;
+}
+
+.accordion {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.accordion__question p {
+  color: #025add;
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+.accordion__answer p {
+  color: black;
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+}
+
+.accordion:hover {
+    cursor: pointer;
+}
+
+.accordion__answer {
+    display: none;
+}
+
+.accordion.active .accordion__answer {
+    display: block;
+}
